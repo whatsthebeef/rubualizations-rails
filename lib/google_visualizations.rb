@@ -4,8 +4,7 @@ module GoogleVisualizations
       attr_accessor :cols_def
 
       def tablize(models, params)
-         hashes = models.map!{|m| m.attributes}.sort_by {|h| h[cols[0]]}
-         return tablize_hashes(hashes, params)
+         return tablize_hashes(models.map!{|m| m.attributes}, params)
       end
 
       def tablize_hashes(hashes, params)
@@ -14,11 +13,11 @@ module GoogleVisualizations
          else
             cols = params[:cols].delete(" ").split(",")
          end
-         hashes.sort_by! {|h| h[cols[0]]}
+         s_hashes = hashes.sort_by {|h| h[cols[0]]}
          if params[:type] == "discrete"
-            return self.discrete_with_cols(hashes, cols)
+            return self.discrete_with_cols(s_hashes, cols)
          else
-            return self.continuous_with_cols(hashes, cols)
+            return self.continuous_with_cols(s_hashes, cols)
          end
       end
 

@@ -11,6 +11,11 @@ class GoogleVisualizationsTest < ActiveSupport::TestCase
       }
    end
 
+   test "tabelize_hashes" do
+      assert_equal @mock.tablize_hashes({}, {cols:"dateplaced,profit"}).to_s,
+         '{:cols=>[{:id=>"A", :label=>"Date Placed", :type=>"datetime"}, {:id=>"B", :label=>"Profit", :type=>"number"}], :rows=>[]}'
+   end
+
    test "discrete_with_cols" do
       assert_equal @mock.discrete_with_cols({}, ["dateplaced", "profit"]).to_s,
          '{:cols=>[{:id=>"A", :label=>"Date Placed", :type=>"datetime"}, {:id=>"B", :label=>"Profit", :type=>"number"}], :rows=>[]}'
