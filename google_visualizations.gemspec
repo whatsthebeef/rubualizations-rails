@@ -7,16 +7,16 @@ require "google_visualizations/version"
 Gem::Specification.new do |s|
   s.name        = "google_visualizations"
   s.version     = GoogleVisualizations::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GoogleVisualizations."
-  s.description = "TODO: Description of GoogleVisualizations."
+  s.authors     = ["John Bower"]
+  s.email       = ["john@zode64.com"]
+  s.homepage    = "http://www.zode64.com"
+  s.summary     = "Rails gem that creates a google visualization data source from ActiveRecord models passed to it."
+  s.description = "Rails gem that creates a google visualization data source from ActiveRecord models passed to it."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0.rc2"
+  s.add_dependency "rails", "~> 4.0.0.rc1"
 
   s.add_development_dependency "sqlite3"
 end
