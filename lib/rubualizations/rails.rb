@@ -1,3 +1,5 @@
+require "rubualizations"
+
 module Rubualizations
    module Rails
       module Tableable
