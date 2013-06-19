@@ -1,8 +1,14 @@
+GIT
+  remote: https://github.com/whatsthebeef/rubualizations
+  revision: 38bff519b330a2314d227898ab07a52a871cf49d
+  specs:
+    rubualizations (0.0.1)
+
 PATH
   remote: .
   specs:
-    google_visualizations (0.0.1)
-      rails (~> 4.0.0.rc2)
+    google_visualizations (0.0.3)
+      rails (~> 4.0.0.rc1)
 
 GEM
   remote: https://rubygems.org/
@@ -85,4 +91,5 @@ PLATFORMS
 
 DEPENDENCIES
   google_visualizations!
+  rubualizations!
   sqlite3

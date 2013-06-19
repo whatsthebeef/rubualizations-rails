@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "google_visualizations/version"
+require "rubualizations/rails/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "google_visualizations"
-  s.version     = GoogleVisualizations::VERSION
+  s.version     = Rubualizations::Rails::VERSION
   s.authors     = ["John Bower"]
   s.email       = ["john@zode64.com"]
   s.homepage    = "http://www.zode64.com"
