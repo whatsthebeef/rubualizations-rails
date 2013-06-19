@@ -12,7 +12,7 @@ class Rubualizations::RailsTest < ActiveSupport::TestCase
    end
 
    test "tabelize" do
-      assert_equal @mock.tablize_hashes([], {cols:"dateplaced,profit"}).to_s,
+      assert_equal @mock.tablize([], {cols:"dateplaced,profit"}).to_s,
          '{:cols=>[{:id=>"A", :label=>"Date Placed", :type=>"datetime"}, {:id=>"B", :label=>"Profit", :type=>"number"}], :rows=>[]}'
    end
 

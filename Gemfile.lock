@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/whatsthebeef/rubualizations
-  revision: 38bff519b330a2314d227898ab07a52a871cf49d
+  revision: 26ce572dd0965439efe040881a5b7d7b0b9e1fd8
   specs:
-    rubualizations (0.0.1)
+    rubualizations (0.0.2)
 
 PATH
   remote: .
