@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 2.2.1"
-
+  s.add_dependency "rubualizations-rails"
 end
