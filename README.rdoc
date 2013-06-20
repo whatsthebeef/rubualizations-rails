@@ -1,3 +1,8 @@
 = Rubualizations::Rails
 
-This project rocks and uses MIT-LICENSE.
+rubualizations-rails is a ruby gem which converts rails ActiveRecords into data structures which can be used by (Google Visualizations) 
+to create graphs in your web page.
+
+See https://github.com/whatsthebeef/rubualizations
+
+
